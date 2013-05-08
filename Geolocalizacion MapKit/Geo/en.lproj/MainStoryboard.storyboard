@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3006" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Latitud" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1N-4j-cfH">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Longitud" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTl-Ve-fU9">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sin Datos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlR-Ni-y18">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sin Datos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNA-dq-EUT">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHI-Tm-Vxx">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Ubicar">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="comenzarUbicacion:" destination="2" eventType="touchUpInside" id="Mfo-nw-EhW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Heading" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjT-Lf-Eyc">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sin Datos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQG-hH-Giq">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3rL-i3-H2V">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="284" id="hsj-BX-mk6"/>
+                                </constraints>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HHI-Tm-Vxx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="20T-Zi-1DS"/>
+                            <constraint firstItem="YlR-Ni-y18" firstAttribute="leading" secondItem="gNA-dq-EUT" secondAttribute="leading" type="default" id="5Xk-kB-bFH"/>
+                            <constraint firstItem="3rL-i3-H2V" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="7N9-eJ-gbj"/>
+                            <constraint firstItem="gNA-dq-EUT" firstAttribute="baseline" secondItem="HTl-Ve-fU9" secondAttribute="baseline" type="default" id="AUC-so-SYY"/>
+                            <constraint firstAttribute="trailing" secondItem="YlR-Ni-y18" secondAttribute="trailing" constant="84" id="DdS-j9-F70"/>
+                            <constraint firstItem="HHI-Tm-Vxx" firstAttribute="top" secondItem="vjT-Lf-Eyc" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="H2i-lS-DwM"/>
+                            <constraint firstAttribute="bottom" secondItem="3rL-i3-H2V" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="L2p-7i-6ns"/>
+                            <constraint firstItem="HHI-Tm-Vxx" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="MNS-h0-mK0"/>
+                            <constraint firstItem="JQG-hH-Giq" firstAttribute="baseline" secondItem="vjT-Lf-Eyc" secondAttribute="baseline" type="default" id="OId-UA-aj6"/>
+                            <constraint firstItem="gNA-dq-EUT" firstAttribute="leading" secondItem="JQG-hH-Giq" secondAttribute="leading" type="default" id="OWb-Rz-diP"/>
+                            <constraint firstItem="HTl-Ve-fU9" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ogz-qc-HXi"/>
+                            <constraint firstItem="HTl-Ve-fU9" firstAttribute="top" secondItem="y1N-4j-cfH" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="bnS-eJ-RC5"/>
+                            <constraint firstItem="vjT-Lf-Eyc" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="dkA-uB-KFK"/>
+                            <constraint firstAttribute="trailing" secondItem="3rL-i3-H2V" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="fZC-uh-G11"/>
+                            <constraint firstItem="vjT-Lf-Eyc" firstAttribute="top" secondItem="HTl-Ve-fU9" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="klj-8T-6DM"/>
+                            <constraint firstItem="y1N-4j-cfH" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="oXy-wZ-d4C"/>
+                            <constraint firstItem="y1N-4j-cfH" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="osI-3T-bHV"/>
+                            <constraint firstItem="YlR-Ni-y18" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="x5E-4S-Op8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblHeading" destination="JQG-hH-Giq" id="epE-uf-zoM"/>
+                        <outlet property="lblLatitud" destination="YlR-Ni-y18" id="1hg-tD-Ztc"/>
+                        <outlet property="lblLongitud" destination="gNA-dq-EUT" id="9EY-St-N81"/>
+                        <outlet property="mapa" destination="3rL-i3-H2V" id="vHE-WP-OYa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="comenzarUbicacion:"/>
+                <relationship kind="outlet" name="lblHeading" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblLatitud" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblLongitud" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mapa" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
