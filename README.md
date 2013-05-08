@@ -3,4 +3,4 @@
 
 Repositorio del material de las tutorias del curso de iOS y material adicional para estudio.<br> <br>Apps.co Bootcamps iOS<br><br>
 
-Tutor: Giovanny Suarez -  @suarezkrac
+Tutor: Giovanny Suarez -  <a href="https://twitter.com/suarezkrac">@suarezkrac</a>
