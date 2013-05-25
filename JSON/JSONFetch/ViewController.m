@@ -26,10 +26,11 @@
         //code executed in the background
         //2
         NSData* kivaData = [NSData dataWithContentsOfURL:
-                            [NSURL URLWithString:@"http://gacko.co/json/json.php"]
+                            [NSURL URLWithString:@"http://gacko.co/json/json.php?kld"]
                             ];
         //3
         NSDictionary* json = nil;
+        
         if (kivaData) {
             json = [NSJSONSerialization
                     JSONObjectWithData:kivaData
@@ -51,7 +52,8 @@
 -(void)updateUIWithDictionary:(NSDictionary*)json {
     @try {
         NSString * cadena = @" ";
-        NSString * valorJson; 
+        NSString * valorJson;
+        
         for (int i = 0; i <= 1; i++)
         {
             valorJson = [NSString stringWithFormat:
